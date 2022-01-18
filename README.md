@@ -1,4 +1,4 @@
-# Gulu UI for Vue 3
+# Z UI for Vue 3
 
 ## 运行步骤
 

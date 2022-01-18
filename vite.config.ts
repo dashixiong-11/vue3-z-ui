@@ -14,11 +14,11 @@ import {baseParse} from '@vue/compiler-core'
 export default {
     base: './',
     assetsDir: 'assets',
-    server: {
-        host: '0.0.0.0',
-        port: 3001,
-        https: false
-    },
+    // server: {
+    //     host: '0.0.0.0',
+    //     port: 3001,
+    //     https: false
+    // },
     plugins: [md()],
     vueCustomBlockTransforms: {
         demo: (options) => {
