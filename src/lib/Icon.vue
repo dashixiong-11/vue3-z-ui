@@ -9,11 +9,10 @@ declare const props: {
   name: string,
   size?: number;
 }
-const {size, name} = props;
 export default {
   props: {
     size: {
-      type: String,
+      type: Number,
       default: 30,
     },
     name:{
@@ -21,6 +20,7 @@ export default {
     }
   },
 };
+const {size, name} = props;
 </script>
 <style lang="scss">
 </style>
