@@ -21,16 +21,10 @@
   </template>
 </template>
 
-<script lang="ts" setup="props, context">
+<script setup="props, context" lang="ts">
 import {SetupContext} from 'vue';
 import Button from "./Button.vue";
 
-declare const props: {
-  visible: boolean;
-  closeOnClickOverlay: boolean;
-  ok: () => boolean;
-  cancel: () => void
-}
 declare const context: SetupContext
 export default {
   props: {
@@ -53,7 +47,7 @@ export default {
     Button,
   },
 };
-export const {ok, cancel} = props
+export const {ok, cancel, closeOnClickOverlay} = props
 export const close = () => {
   context.emit('update:visible', false)
 }

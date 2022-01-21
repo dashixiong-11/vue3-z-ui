@@ -5,7 +5,8 @@
       <main>
         <router-view/>
       </main>
-      <aside v-if="menuVisible">
+<!--      <aside v-if="menuVisible">-->
+        <aside >
         <div>
           <span @click=" onClick('doc')">文档</span>
           <ol class='install-ol' v-if=" selectedItem === 'doc'">
@@ -35,6 +36,9 @@
             <li>
               <router-link to="/doc/tabs">Tabs 组件</router-link>
             </li>
+            <li>
+              <router-link to="/doc/toast">Toast 组件</router-link>
+            </li>
           </ol>
         </div>
       </aside>
@@ -45,9 +49,9 @@
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
 import {
-  inject,
   Ref,
-  ref
+  ref,
+  inject
 } from "vue";
 
 export default {
@@ -124,7 +128,7 @@ aside {
       padding: 0 16px;
       font-weight: bold;
       cursor: default;
-      user-select:none;
+      user-select: none;
     }
   }
 

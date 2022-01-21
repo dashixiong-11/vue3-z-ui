@@ -3,7 +3,7 @@
     <div class="topnavAndBanner">
       <Topnav/>
       <div class="banner">
-        <Icon name='flash' size='120' />
+        <Icon name='flash' :size='120' />
         <div v-html=" '<code>$ yarn add zui</code>' ">
         </div>
         or
@@ -17,17 +17,17 @@
     <div class="features">
       <ul>
         <li>
-          <Icon name='vue' size='60' />
+          <Icon name='vue' :size='60' />
           <h3>基于 Vue 3</h3>
           <p>使用了 Vue 3 Composition API</p>
         </li>
         <li>
-          <Icon name='ts' size='60' />
+          <Icon name='ts' :size='60' />
           <h3>基于 TypeScript </h3>
           <p>源代码采用 TypeScript 书写</p>
         </li>
         <li>
-          <Icon name='light' size='60' />
+          <Icon name='light' :size='60' />
           <h3>代码易读</h3>
           <p>每个组件的源代码都极其简洁</p>
         </li>

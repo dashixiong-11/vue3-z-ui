@@ -6,7 +6,7 @@
     </div>
     <div class="demo-actions" @click='toggle'>
       <Icon name='left'/>
-      <Icon :style='{opacity: codeVisible? 0:1}' name='i' size='15'/>
+      <Icon :style='{opacity: codeVisible? 0:1}' name='i' :size='15'/>
       <Icon name='right'/>
     </div>
     <div class="demo-code" v-if="codeVisible">

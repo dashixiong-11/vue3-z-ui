@@ -2,19 +2,19 @@
   <div class="topnav">
     <router-link to="/" class="logo">
       <div class='logo-wrapper'>
-        <Icon name='flash' size='40'/>
+        <Icon name='flash' :size='40'/>
         <span>ZUI</span>
       </div>
     </router-link>
     <ul class="menu">
       <li>
         <router-link to="/doc">
-          <Icon name='github' size='30'/>
+          <Icon name='github' :size='30'/>
         </router-link>
       </li>
     </ul>
 
-    <Icon name='menu' size='40' v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu"/>
+    <Icon name='menu' :size='40' v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu"/>
   </div>
 </template>
 

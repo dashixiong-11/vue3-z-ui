@@ -5,6 +5,6 @@ git init &&
 git add . &&
 git commit -m "update" &&
 git branch -M master &&
-git remote add origin git@gitee.com:frankfang/gulu-ui-website-1.git &&
+git remote add origin git@github.com:dashixiong-11/vue-zui-website.git &&
 git push -f -u origin master &&
 cd -
